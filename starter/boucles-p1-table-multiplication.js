@@ -16,3 +16,15 @@ N.B. Faites-le de deux manières différentes :
 
 
 // avec WHILE
+let i = 0;
+let resultat;
+let mutiply =parseInt(prompt("Quelle table de multiplication souhaitez-vous afficher ? La table de multiplication par"));
+let longueur =parseInt(prompt("Combien de valeurs souhaitez-vous afficher pour cette table ?"))
+
+
+console.log(`Voici les ${longueur} premières valeurs de la table de multiplication par ${mutiply}`);
+while (i < longueur) {
+	console.log(mutiply*i);
+	i++;
+	
+}

@@ -14,3 +14,16 @@
 4. Affichez ensuite le résultat avec, pour chacune des tables, un titre
 	"Voici les … premières valeurs de la table de multiplication par …" 
 */
+
+let resultat;
+let nbtable =parseInt(prompt("Je peux vous afficher les n premières tables de la table de multiplication"));
+let longueur =parseInt(prompt("Combien de valeurs souhaitez-vous afficher pour chacune des tables ?"))
+
+
+console.log(`OK, je vais vous afficher les ${longueur} premières valeurs des ${nbtable} premières tables de multiplication.`);
+for (let i = 1; i <= nbtable; i++) {
+	console.log(`Voici les ${longueur} premières valeurs de la table de multiplication par ${i}`);
+	for (let j = 1; j <= longueur; j++) {
+		console.log(i*j);
+	}
+}
